@@ -1,0 +1,46 @@
+<!-- Add this section below your existing form in resume-form.component.html -->
+<app-navbar></app-navbar>
+<div class="container">
+<h2 class="edu">Education Qualification</h2>
+<div class="education-form-row">
+  <div class="education-form-column">
+    <label for="iname" class="education-label">Institute Name : </label>
+    <input type="text" id="iname" name="iname" required>
+
+    <label for="city" class="education-label">City : </label>
+    <input type="text" id="city" name="city" required>
+
+   
+  </div>
+
+  <div class="education-form-column">
+   
+    <label for="state" class="education-label">State : </label>
+    <input type="text" id="state" name="state" required>
+
+    <label for="degree" class="education-label">Name Of Degree : </label>
+    <input type="text" id="degree" name="degree" required>
+  </div>
+</div>
+
+<div class="education-form-row">
+  <div class="education-form-column">
+    <label for="study" class="education-label">Field Of Study : </label>
+    <input type="text" id="study" name="study" required>
+
+    <label for="sdate" class="education-label">Graduction Start Date : </label>
+    <input type="date" id="sdate" name="sdate" required>
+   
+  </div>
+
+  <div class="education-form-column">
+    <label for="grades" class="education-label">Grades :  </label>
+    <input type="number" id="grades" name="grades" required>
+
+    <label for="edate" class="education-label">Graduction End Date : </label>
+    <input type="date" id="edate" name="edate" required>
+  </div>
+  
+</div>
+<button type="submit" routerLink="/form-info3">Submit</button>
+</div>

@@ -1,0 +1,81 @@
+/* Add this section to your existing CSS file */
+
+/* Style for form rows in skills section */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  button {
+    transition: all 0.3s ease-in-out;
+  }
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+.skills-form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for form columns in skills section */
+  .skills-form-column {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  /* Add spacing between skills fields */
+  .skills-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  /* Style for input fields in skills section */
+  input, select {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  /* Add hover effect to skills fields */
+  input:hover, select:hover {
+    border-color: #4caf50;
+  }
+  
+  /* Add focus styles to skills fields */
+  input:focus, select:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  

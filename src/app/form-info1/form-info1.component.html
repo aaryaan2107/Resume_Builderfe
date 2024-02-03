@@ -1,0 +1,59 @@
+<!-- resume-form.component.html -->
+<app-navbar></app-navbar>
+<div class="container">
+    <h2>Personal Information</h2>
+  
+    <div class="form-row">
+      <div class="form-column">
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name"  required>
+  
+    
+        <label for="country">Date of Birth </label>
+        <input type="date" id="dob" name="dob"  required>
+
+        <label for="number">Phone No. </label>
+        <input type="number" id="number" name="number" style="margin-top : 10px;" required>
+       
+        
+      </div>
+  
+      <div class="form-column">
+        <label for="ltname">Last Name : </label>
+        <input type="text" id="name" name="name"  required>
+       
+        <label for="level1" class="skills-label">Gender : </label>
+        <select name="gender" id="gender" class="skills-level" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="others">Others</option>
+        </select>
+      
+
+   <label for="email" style="margin-top: 30px;">Email : </label>
+   <input type="email" id="email" name="email"  required>
+       
+      </div>
+    </div>
+  
+    <div class="form-row">
+      <div class="form-column">
+        <label for="address">Address : </label>
+        <textarea id="address" name="address"  rows="4" required></textarea>
+      </div>
+      
+      <div class="form-column">
+        <!-- Add the next 4 fields here -->
+        <!-- Example: -->
+       
+        <label for="martial-status" class="skills-label">Martial Status : </label>
+        <select name="martial" id="martial" class="skills-level" required>
+          <option value="married">Married</option>
+          <option value="unmarried">Unmarried</option>
+        </select>
+      </div>
+    </div>
+  
+    <button type="submit" routerLink="/form-info2">Submit</button>
+  </div>
+  

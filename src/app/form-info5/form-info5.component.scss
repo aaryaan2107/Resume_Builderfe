@@ -1,0 +1,124 @@
+/* resume-form.component.css */
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-column {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add some spacing between form fields */
+  input,
+  textarea {
+    margin-bottom: 20px;
+  }
+  
+  /* Add a subtle transition effect */
+  input,
+  textarea,
+  button {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Add hover effect to form fields */
+input:hover,
+textarea:hover,
+select:hover {
+  border-color: #4caf50;
+}
+/* Add focus styles to form fields */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+/* Style the submit button */
+button {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+/* Style for error messages */
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+input, select {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Add hover effect to skills fields */
+input:hover, select:hover {
+  border-color: #4caf50;
+}
+
+/* Add focus styles to skills fields */
+input:focus, select:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
