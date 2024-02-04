@@ -1,0 +1,204 @@
+<app-navbar></app-navbar>
+<body>
+
+  <div>
+<div class="resume">
+       <div class="resume_left">
+         <div class="resume_profile">
+           <img src="https://i.imgur.com/eCijVBe.png" alt="profile_pic">
+         </div>
+         <div class="resume_content">
+           <div class="resume_item resume_info">
+             <div class="title">
+               <p class="bold">{{item.frist_nm}} {{item.last_nm}}</p>
+               <p class="regular">{{item.profession}}</p>
+             </div>
+             <ul>
+               <li>
+                 <div class="icon">
+                   <i class="fa fa-map-signs"></i>
+                 </div>
+                 <div class="data">
+                  {{item.address}} 
+                  <br />
+                 </div>
+               </li>
+               <li>
+                 <div class="icon">
+                   <i class="fas fa-mobile-alt"></i>
+                 </div>
+                 <div class="data">
+                    {{item.phone}}
+                 </div>
+               </li>
+               <li>
+                 <div class="icon">
+                   <i class="fas fa-envelope"></i>
+                 </div>
+                 <div class="data">
+                   {{item.email}}
+                 </div>
+               </li>
+             </ul>
+           </div>
+           <div class="resume_item resume_skills">
+             <div class="title">
+               <p class="bold">skill's</p>
+             </div>
+             <ul>
+                <li *ngFor="let a of item.skils">
+                 <div class="skill_name"> {{a.name}}
+                 </div>
+                 <!-- <div class="skill_progress">
+                  
+                   <span style="width: 80%;"></span>
+                 </div> -->
+                 <div class="skill_per"> {{a.level}}</div>
+                </li>
+
+
+               <!-- <li>
+                 <div class="skill_name">
+                   
+                 </div>
+                 <div class="skill_progress">
+                   <span style="width: 70%;"></span>
+                 </div>
+                 <div class="skill_per"></div>
+               </li>
+               <li>
+                 <div class="skill_name">
+                   
+                 </div>
+                 <div class="skill_progress">
+                   <span style="width: 90%;"></span>
+                 </div>
+                 <div class="skill_per"></div>
+               </li>
+               <li>
+                 <div class="skill_name">
+                   JS
+                 </div>
+                 <div class="skill_progress">
+                   <span style="width: 60%;"></span>
+                 </div>
+                 <div class="skill_per"></div>
+               </li>
+               <li>
+                 <div class="skill_name">
+                   
+                 </div>
+                 <div class="skill_progress">
+                   <span style="width: 88%;"></span>
+                 </div>
+                 <div class="skill_per">88%</div>
+               </li> -->
+             
+              </ul>
+           </div>
+           <!-- <div class="resume_item resume_social">
+             <div class="title">
+               <p class="bold"></p>
+             </div>
+             <ul>
+               <li>
+                 <div class="icon">
+                   <i class="fab fa-facebook-square"></i>
+                 </div>
+                 <div class="data">
+                   <p class="semi-bold"></p>
+                   <p></p>
+                 </div>
+               </li>
+               <li>
+                 <div class="icon">
+                   <i class="fab fa-twitter-square"></i>
+                 </div>
+                 <div class="data">
+                   <p class="semi-bold"></p>
+                   <p></p>
+                 </div>
+               </li>
+               <li>
+                 <div class="icon">
+                   <i class="fab fa-youtube"></i>
+                 </div>
+                 <div class="data">
+                   <p class="semi-bold"></p>
+                   <p></p>
+                 </div>
+               </li>
+               <li>
+                 <div class="icon">
+                   <i class="fab fa-linkedin"></i>
+                 </div>
+                 <div class="data">
+                   <p class="semi-bold"></p>
+                   <p></p>
+                 </div>
+               </li>
+             </ul>
+           </div> -->
+         </div>
+      </div>
+      <div class="resume_right">
+        <div class="resume_item resume_about">
+            <div class="title">
+               <p class="bold">About us</p>
+             </div>
+            <p>{{item.professional_summary}}</p>
+        </div>
+        <div class="resume_item resume_work">
+            <div class="title">
+               <p class="bold">WORK EXPERIENCE</p>
+             </div>
+            <ul>
+                <!-- <li *ngFor="let a of item.work_hs"> -->
+                <li *ngFor="let a of item.work_hs">
+                    <div class="date"></div> 
+                    <div class="info">
+                         <p class="semi-bold">{{a.start_date}}  -- {{a.end_date}} </p> 
+                      <h6>{{a.job_title}}</h6>
+                      <p>{{a.job_description}}</p>
+                    </div>
+                </li>
+
+                <!-- <li>
+                  <div class="date"></div>
+                  <div class="info">
+                         <p class="semi-bold"></p> 
+                      <p></p>
+                    </div>
+                </li>
+                <li>
+                  <div class="date"></div>
+                  <div class="info">
+                         <p class="semi-bold"></p> 
+                      <p></p>
+                    </div>
+                </li> -->
+            
+            </ul>
+        </div>
+        <div class="resume_item resume_education">
+          <div class="title">
+               <p class="bold">Education</p>
+             </div>
+          <ul>
+                <li *ngFor="let a of item.education">
+                    <div class="date">{{a.graduation_date}}</div> 
+                    <div class="info">
+                         <p class="semi-bold">{{a.field_of_study}} ( {{a.s_name}} ) {{a.grades}}% </p> 
+                      <p></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+
+
+  
+</body>

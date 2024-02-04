@@ -53,7 +53,8 @@ nav .wrapper{
 }
 .nav-links .drop-menu{
   position: absolute;
-  background: #042e5b;
+  
+  background: #ffffff;
   width: 180px;
   line-height: 45px;
   top: 85px;
@@ -67,6 +68,7 @@ nav .wrapper{
   top: 70px;
   opacity: 1;
   visibility: visible;
+  color:#0080ff
 }
 .drop-menu li a{
   width: 100%;
@@ -74,6 +76,7 @@ nav .wrapper{
   padding: 0 0 0 15px;
   font-weight: 400;
   border-radius: 0px;
+  color: black;
 }
 .mega-box{
   position: absolute;

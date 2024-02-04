@@ -1,31 +1,36 @@
 <!-- resume-form.component.html -->
 <app-navbar></app-navbar>
-<div class="container">
+<div *ngIf="message" class="message-box">
+  <button (click)="closeMessage()"><i class="bi bi-x-lg"></i></button>
+  <h3 class="h3"><i class="bi bi-info-circle-fill"></i>{{ message }}</h3>
+</div>
+<form (ngSubmit)="onSubmit()">
+
+  <div class="container">
     <h2>Interest And About Your Self</h2>
   
     <div class="form-row">
       <div class="form-column">
         <label for="interest1">Interest : </label>
-        <input type="text" id="interest1" name="interest1"  required>
-  
-    
+        <input type="text" id="interest1" name="interest1" [(ngModel)]="interest1" required>
+        
+        
         <label for="interest2">Interest : </label>
-        <input type="text" id="interest2" name="interest2"  required>
-
+        <input type="text" id="interest2" name="interest2" [(ngModel)]="interest2"  required>
+        
         <label for="interest3">Interest : </label>
-        <input type="text" id="interest3" name="interest3"  required>
-       
-    </div>
-    
-    <div class="form-column">
-        <div class="form-column">
-            <label for="address"> About Your Self : </label>
-            <textarea id="address" name="address"  rows="9" required></textarea>
+        <input type="text" id="interest3" name="interest3" [(ngModel)]="interest3"  required>
+        
       </div>
-      <button type="submit" routerLink="">Submit</button>
+      
+      <div class="form-column">
+        <div class="form-column">
+          <label for="address"> About Your Self : </label>
+          <textarea id="professional_summary" name="professional_summary" [(ngModel)]="professional_summary"  rows="9" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </div>
     </div>
-  
-   
-  
   </div>
-  
+  </form>
+      

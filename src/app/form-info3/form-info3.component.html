@@ -1,19 +1,24 @@
 <app-navbar></app-navbar>
-<div class="container">
-<h2 class="edu">Experience</h2>
-<div class="education-form-row">
-  <div class="education-form-column">
+<div *ngIf="message" class="message-box">
+  <button (click)="closeMessage()"><i class="bi bi-x-lg"></i></button>
+  <h3 class="h3"><i class="bi bi-info-circle-fill"></i>{{ message }}</h3>
+</div>
+<form (ngSubmit)="onSubmit()">
+  <div class="container">
+    <h2 class="edu">Experience</h2>
+    <div class="education-form-row">
+      <div class="education-form-column">
     <label for="jtitle" class="education-label">Job Title :  </label>
-    <input type="text" id="jtitle" name="jtitle" required>
+    <input type="text" id="job_title" name="job_title" [(ngModel)]="job_title" required>
 
     <label for="city" class="education-label">City : </label>
-    <input type="text" id="city" name="city" required>
+    <input type="text" id="location" name="location" [(ngModel)]="location" required>
   </div>
-
+  
   <div class="education-form-column">
     <label for="employer" class="education-label">Employer : </label>
-    <input type="text" id="employer" name="employer" required>
-
+    <input type="text" id="emp" name="emp" [(ngModel)]="emp" required>
+    
     <label for="state" class="education-label">State : </label>
     <input type="text" id="state" name="state" required>
   </div>
@@ -22,28 +27,33 @@
 <div class="education-form-row">
   <div class="education-form-column">
     <label for="jsdate" class="education-label">Start Date : </label>
-    <input type="date" id="jsdate" name="jsdate" required>
+    <input type="date" id="start_date" name="start_date" [(ngModel)]="start_date" required>
   </div>
-
+  
   <div class="education-form-column">
     <label for="jedate" class="education-label">End Date : </label>
-    <input type="date" id="jedate" name="jedate" required>
+    <input type="date" id="end_date" name="end_date" [(ngModel)]="end_date" required>
   </div>
-
+  
   
 </div>
 <div class="education-form-row">
-    <div class="education-form-column">
-        <label for="jobresponse" class="education-label">Job Responsibilities : </label>
-        <textarea id="address" name="jobresponse"  rows="4" cols="100" required></textarea> 
-    </div>
+  <div class="education-form-column">
+    <label for="jobresponse" class="education-label">Job Responsibilities : </label>
+    <textarea id="job_description" name="job_description"  rows="2" cols="100" [(ngModel)]="job_description" required></textarea> 
+  </div>
   
-    <div class="education-form-column">
-      
-    </div>
-  
+  <div class="education-form-column">
     
   </div>
-
-<button type="submit" routerLink="/form-info4">Submit</button>
+  
+  
 </div>
+
+<button type="submit">Submit</button>
+</div>
+</form>
+
+<div class="container2" style="border: 3px dashed blue; border-radius: 10px; width: 70%; margin-left: 18%; height: 100px; margin-top: 20px;">
+  BCA 
+  </div>

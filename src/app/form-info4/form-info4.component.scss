@@ -9,8 +9,34 @@
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
+  .message-box {
+    background-color: #01b8ff;
+    padding: 10px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 0.5%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .h3
+  {
+    margin-left: 33%;
+  }
+  .message-box button {
+    background: none;
+    float: right;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #000000;
+    margin-top: -20px;
+  }
+  
+  .message-box button:hover {
+    color: #555;
+  }
   button {
-    background-color: #4caf50;
+    background-color: #0080ff;
     color: #fff;
     cursor: pointer;
     font-size: 18px;
@@ -20,13 +46,13 @@
   }
   
   button:hover {
-    background-color: #45a049;
+    background-color: #0275e9;
   }
   button {
     transition: all 0.3s ease-in-out;
   }
   button {
-    background-color: #4caf50;
+    background-color: #0080ff;
     color: #fff;
     cursor: pointer;
     font-size: 18px;
@@ -36,7 +62,7 @@
     transition: background-color 0.3s ease-in-out;
   }
   button:hover {
-    background-color: #45a049;
+    background-color: #0275e9;
   }
 .skills-form-row {
     display: flex;
@@ -55,7 +81,7 @@
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #4caf50;
+    color: #0080ff;
   }
   
   /* Style for input fields in skills section */
@@ -70,12 +96,13 @@
   
   /* Add hover effect to skills fields */
   input:hover, select:hover {
-    border-color: #4caf50;
+    border-color: #0080ff;
   }
   
   /* Add focus styles to skills fields */
   input:focus, select:focus {
-    border-color: #4caf50;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    border-color: #0080ff;
+    box-shadow: 0 0 5px rgba(0, 86, 255, 0.5);
+
   }
   

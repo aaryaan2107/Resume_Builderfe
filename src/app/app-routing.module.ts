@@ -9,6 +9,7 @@ import { FormInfo2Component } from './form-info2/form-info2.component';
 import { FormInfo3Component } from './form-info3/form-info3.component';
 import { FormInfo4Component } from './form-info4/form-info4.component';
 import { FormInfo5Component } from './form-info5/form-info5.component';
+import { ITComponent } from './it/it.component';
 
 const routes: Routes = [
   {path: '', component:HomeComponent },
@@ -16,10 +17,11 @@ const routes: Routes = [
   {path:'contact-form', component:ContactFormComponent},
   {path:'about', component:AboutComponent},
   {path:'form-info1', component:FormInfo1Component},
-  {path:'form-info2', component:FormInfo2Component},
-  {path:'form-info3', component:FormInfo3Component},
-  {path:'form-info4', component:FormInfo4Component},
-  {path:'form-info5', component:FormInfo5Component},
+  {path:'form-info2/:id', component:FormInfo2Component},
+  {path:'form-info3/:id', component:FormInfo3Component},
+  {path:'form-info4/:id', component:FormInfo4Component},
+  {path:'form-info5/:id', component:FormInfo5Component},
+  {path:'it/:id', component:ITComponent},
 ];
 
 @NgModule({

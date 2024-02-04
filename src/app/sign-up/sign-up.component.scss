@@ -6,7 +6,10 @@ body{
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
-	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+	background: #4e54c8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .main{
 	width: 350px;
@@ -54,7 +57,7 @@ button{
 	justify-content: center;
 	display: block;
 	color: #fff;
-	background: #573b8a;
+	background: #333bc1;
 	font-size: 1em;
 	font-weight: bold;
 	margin-top: 20px;
@@ -65,7 +68,7 @@ button{
 	cursor: pointer;
 }
 button:hover{
-	background: #6d44b8;
+	background: #431f86;
 }
 .login{
 	height: 460px;

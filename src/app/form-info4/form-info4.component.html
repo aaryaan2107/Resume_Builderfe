@@ -1,45 +1,53 @@
 <app-navbar></app-navbar>
-
-<!-- Add this section below your existing form in resume-form.component.html -->
-<div class="container">
-<h2 style="margin-left: 43%;"> Skills</h2>
-
-<div class="skills-form-row">
-  <div class="skills-form-column">
-    <label for="skill1" class="skills-label">Skill 1:</label>
-    <input type="text" id="skill1" name="skill1" required>
-
-    <label for="level1" class="skills-label">Level 1:</label>
-    <select name="level1" id="level1" class="skills-level" required>
-      <option value="beginner">Beginner</option>
+<div *ngIf="message" class="message-box">
+  <button (click)="closeMessage()"><i class="bi bi-x-lg"></i></button>
+  <h3 class="h3"><i class="bi bi-info-circle-fill"></i>{{ message }}</h3>
+</div>
+<form (ngSubmit)="onSubmit()">
+  <div class="container">
+    <h2 style="margin-left: 43%;"> Skills</h2>
+    
+    <div class="skills-form-row">
+      <div class="skills-form-column">
+        <label for="skill1" class="skills-label">Skill 1:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="name" required>
+        
+        <label for="level1" class="skills-label">Level 1:</label>
+        <select name="level" id="level" class="skills-level" [(ngModel)]="level" required>
+          <option value="beginner">Beginner</option>
       <option value="intermediate">Intermediate</option>
       <option value="advanced">Advanced</option>
     </select>
   </div>
-
+  
   <div class="skills-form-column">
     <label for="skill2" class="skills-label">Skill 2:</label>
-    <input type="text" id="skill2" name="skill2" required>
-
+    <input type="text" id="name1" name="name1" [(ngModel)]="name1" required>
+    
     <label for="level2" class="skills-label">Level 2:</label>
-    <select name="level2" id="level2" class="skills-level" required>
+    <select name="level1" id="level1" class="skills-level" [(ngModel)]="level1" required>
       <option value="beginner">Beginner</option>
       <option value="intermediate">Intermediate</option>
       <option value="advanced">Advanced</option>
     </select>
   </div>
-
+  
   <div class="skills-form-column">
     <label for="skill3" class="skills-label">Skill 3:</label>
-    <input type="text" id="skill3" name="skill3" required>
-
+    <input type="text" id="name2" name="name2" [(ngModel)]="name2" required>
+    
     <label for="level3" class="skills-label">Level 3:</label>
-    <select name="level3" id="level3" class="skills-level" required>
+    <select name="level2" id="level2" class="skills-level" [(ngModel)]="level2" required>
       <option value="beginner">Beginner</option>
       <option value="intermediate">Intermediate</option>
       <option value="advanced">Advanced</option>
     </select>
   </div>
 </div>
-<button type="submit" routerLink="/form-info5">Submit</button>
+<button type="submit">Submit</button>
+</div>
+</form>
+
+<div class="container2" style="border: 3px dashed blue; border-radius: 10px; width: 70%; margin-left: 18%; height: 100px; margin-top: 20px;">
+  BCA 
 </div>
